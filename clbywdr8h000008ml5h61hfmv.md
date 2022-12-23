@@ -1,0 +1,729 @@
+# JavaScript Array and It's Methods.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671701129013/iVWYwf1b5.gif align="center")
+
+# Array:
+
+An array is a special variable, which can hold more than one value If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+
+```javascript
+let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";
+```
+
+However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+
+The solution is an array!
+
+An array can hold many values under a single name, and you can access the values by referring to an index numbers.
+
+```javascript
+//Array in js
+let arr = ['rak', 'anis', 'raj', 'sami', 'adil', 'anam'];
+console.log(arr);
+
+//Array can be defined like this too!---it's by using Javascript keyword new.
+
+const cars = new Array("Saab", "Volvo", "BMW");
+```
+
+## Array Methods:
+
+Arrays provide a lot of methods. To make things easier, in this chapter they are split into groups. In JavaScript, `Array` is a built-in global object that allows you to store multiple elements at once.
+
+Array methods are functions built-in to JavaScript that we can apply to our arrays — Each method has a unique function that **performs a change or calculation to our array and saves us from writing common functions from scratch**.
+
+## [Add/remove items](https://javascript.info/array-methods#add-remove-items)
+
+These are used to add or delete the array item.
+
+*   `arr.push(...items)` – adds items to the end,
+    
+*   `arr.pop()` – extracts an item from the end,
+    
+*   `arr.shift()` – extracts an item from the beginning,
+    
+*   `arr.unshift(...items)` – adds items to the beginning.
+    
+
+### Push and Pop Method:
+
+**JavaScript Array pop():** Removes and returns the last array element
+
+**JavaScript Array push()** :Adds elements to end of array & returns its length
+
+```javascript
+//Array in js
+let arr = ['rak', 'anis', 'raj', 'sami', 'adil', 'anam'];
+
+//printing the whole array
+console.log(arr);
+//push array---it add the value in array at last
+arr.push('anas' , 'rahat');
+console.log(arr);
+
+// //pop array ----it deletes the last value of array
+
+arr.pop();
+console.log(arr);
+```
+
+### Output:
+
+```javascript
+//output of printing array.
+[ 'rak', 'anis', 'raj', 'sami', 'adil', 'anam' ]
+//push array---it add the value in array at last
+[
+  'rak',  'anis',
+  'raj',  'sami',
+  'adil', 'anam',
+  'anas', 'rahat'
+]
+ //pop array ----it deletes the last value of array
+
+[
+  'rak',  'anis',
+  'raj',  'sami',
+  'adil', 'anam',
+  'anas'
+]
+```
+
+### Shift and Unshift Method:
+
+**JavaScript Array shift() :** Removes and returns the first array element
+
+**JavaScript Array unshift():** Adds elements to start of array and returns length
+
+```javascript
+//shift in array  it delete the first element in array
+
+let Arraynew=['amir','shobi','8', 'sumit', 'simmi', 'jimmy'];
+Arraynew.shift();
+ console.log(Arraynew);
+
+ //unshift in array ----add new element at the starting of array
+
+ Arraynew.unshift("rakii");
+ console.log(Arraynew);
+```
+
+### Output:
+
+```javascript
+//shift
+[ 'shobi', '8', 'sumit', 'simmi', 'jimmy' ]
+//unshift
+[ 'rakii', 'shobi', '8', 'sumit', 'simmi', 'jimmy' ]
+```
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671701495516/3Oe1nFn3X.gif align="center")
+
+### length, reverse() & sort() Methods:
+
+**JavaScript Array length :** Returns the number of elements in an array
+
+**JavaScript Array reverse() :** Returns the array in reverse order
+
+**JavaScript Array sort() :** Sorts the elements of an array in specific order
+
+```javascript
+//Array in js
+let arr = ['rak', 'anis', 'raj', 'sami', 'adil', 'anam'];
+
+//printing the whole array
+console.log(arr);
+
+//string at index 2
+console.log(arr[2]);
+
+//lenght of array
+
+console.log(arr.length);
+
+//reverse array
+
+console.log(arr.reverse());
+
+// sort array
+console.log(arr.sort());
+```
+
+### Output:
+
+```javascript
+//printing the whole array
+[ 'rak', 'anis', 'raj', 'sami', 'adil', 'anam' ]
+//string at index 2
+raj
+//lenght of array
+6
+//reverse array
+[ 'anam', 'adil', 'sami', 'raj', 'anis', 'rak' ]
+// sort array
+[ 'adil', 'anam', 'anis', 'raj', 'rak', 'sami' ]
+```
+
+### Slice & Splice Methods:
+
+**JavaScript Array slice():** Returns a shallow copy of a portion of an array
+
+**JavaScript Array splice():** Returns an array by changing its elements in place
+
+```javascript
+//Array in js
+let arr = ['rak', 'anis', 'raj', 'sami', 'adil', 'anam'];
+
+//slice in array  _(start, end)-end index will not shown in output
+
+let newarr= arr.slice(2,4); 
+console.log(newarr);
+
+//splice  __(start, no of index)  ---start index and  no--how many elements will get delted
+
+let newarr1= arr.splice(3,4); 
+console.log(newarr1);
+console.log(arr);
+
+// start with index1 --change the value of index 1 with 18.
+
+let newarr2= arr.splice(1,1, 18); 
+
+console.log(arr);
+```
+
+### Output:
+
+```javascript
+//Array in js
+[ 'rak', 'anis', 'raj', 'sami', 'adil', 'anam' ]
+//slice in array  _(start, end)-end index will not shown in output
+
+[ 'raj', 'sami' ]
+//splice  __(start, no of index)  ---start index and  no--how many elements will get delted
+[ 'sami', 'adil', 'anam' ]
+['rak', 'anis', 'raj' ]  
+// start with index1 --change the value of index 1 with 18.
+[ 'rak', 18, 'raj' ]
+```
+
+### fill(), join() & concat() Methods:
+
+**JavaScript Array fill():** Returns array by filling elements with given value
+
+**Javascript Array join() :** Concatenates the array elements to a string
+
+**JavaScript Array concat():** Returns array by merging given value and/or arrays
+
+```javascript
+//Other methods would  be applied in new array;
+
+ let arraynew=['amir','shobi','ankit', 'sumit', 'simmi', 'jimmy'];
+console.log(arraynew);
+
+
+//fill in array --value, start index, end index but..end index will be exlusive
+
+arraynew.fill("mahi", 2 , 3);
+console.log(arraynew);
+
+//array concat  it's add the two or more array in one
+
+arr1new= ['1','2','3','4'];
+arr2new=['5','6', '7','8'];
+arr3new= arr1new.concat(arr2new);
+console.log(arr3new);
+
+//array join-this join the elments of array with the given value
+
+arr4new= arr3new.join(" ")
+console.log(arr4new);
+```
+
+### Output:
+
+```javascript
+[ 'amir', 'shobi', 'ankit', 'sumit', 'simmi', 'jimmy' ]
+
+//fill in array --value, start index, end index but..end index will be exlusive
+[ 'amir', 'shobi', 'mahi', 'sumit', 'simmi', 'jimmy' ]
+
+//array concat  it's add the two or more array in one
+[
+  '1', '2', '3',
+  '4', '5', '6',
+  '7', '8'
+]
+//array join-this join the elments of array with the given value
+
+1 2 3 4 5 6 7 8
+```
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671701454201/y7XeKefCf.gif align="center")
+
+### toString() , **Array of()** & isArray() Methods:
+
+**Javascript Array toString():** Returns the string representation of an array
+
+**Javascript Array isArray():** Checks if the given value is a JavaScript Array
+
+**JavaScript Array of() Method :**Creates a new Array instance from given arguments
+
+**Javascript Array.from() :** The `from()` method creates a new array from any array-like or iterable object.
+
+```javascript
+// toString in array
+
+stringarray = ['mahi',8,'rani',10];
+stringarray1= stringarray.toString();
+console.log(stringarray);
+console.log(stringarray1);
+
+//isArray of array
+let numarray=[ 1,8,7,8,6,4]
+
+console.log(Array.isArray(numarray));
+
+//Arrayof Method in array
+// creating an array named alphabets with elements A,B,C
+let alphabets = Array.of("A", "B", "C");
+
+// display contents of alphabet'
+console.log(alphabets);
+
+//Array.from() in array
+
+let newArray = Array.from("abc"); // creating a new array from string
+
+console.log(newArray);
+```
+
+### Output:
+
+```javascript
+//array original
+[ 'mahi', 8, 'rani', 10 ]
+// toString in array
+mahi,8,rani,10
+//isArray of array
+true
+//Array.of in array
+[ 'A', 'B', 'C' ]
+
+//Array.from in array
+
+ [ 'a', 'b', 'c' ] // Output:
+```
+
+### indexOf() & lastIndexOf Methods:
+
+**JavaScript Array indexOf() :** Returns the first index of occurrence of element
+
+**JavaScript Array lastIndexOf()** : Returns the last index of occurrence of an element
+
+```javascript
+ let Arraynew=['amir','shobi','8', 'rakii', 'simmi', 'jimmy'];
+ console.log(Arraynew); 
+//indexOf array--specify the value of first-index of elements
+
+ let index= Arraynew.indexOf('shobi');
+ console.log(index);
+
+ //lastindexOf of array---give the index of last same elements
+
+ let index1= Arraynew.lastIndexOf("rakii");
+ console.log(index1);
+```
+
+### Output:
+
+```javascript
+//array list
+[ 'amir', 'shobi', '8', 'rakii', 'simmi', 'jimmy' ]
+//indexOf array--specify the value of first-index of elements
+1
+//lastindexOf of array---give the index of last same elements
+3
+```
+
+### findIndex() & find() Methods:
+
+**JavaScript Array findIndex():** Returns index of element that satisfies condition
+
+**JavaScript Array find() :** Returns first element that satisfies a condition
+
+```javascript
+let Arraynew=['amir','shobi','8', 'sumit', 'simmi', 'jimmy'];
+
+ console.log(Arraynew);
+
+//findIndex of array---return the index of first array elemts
+
+function isEven(elements){
+
+    
+    return elements%2==0;
+
+}
+
+findindex= Arraynew.findIndex(isEven);
+
+console.log(findindex);
+
+
+//find of array----find the element which satisfy the condition
+
+let numarray=[ 1,8,7,8,6,4]
+
+
+function isEven1(elements){
+return elements%2==0;
+
+}
+
+let findarr= numarray.find(isEven1);
+console.log('first even no in array' , findarr);
+```
+
+### Output:
+
+```javascript
+[ 'amir', 'shobi', '8', 'sumit', 'simmi', 'jimmy' ]
+//findIndex of array---return the index of first array element that satisfies the condition
+2
+//find of array----find the element which satisfy the condition
+first even no in array 8
+```
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671701583120/isipuf6iu.gif align="center")
+
+### includes(), map() , keys() & values() Method:
+
+**JavaScript Array includes() :** Checks if a value exists in an array
+
+**JavaScript Array map() :** Returns array by mapping elements using given function
+
+**JavaScript Array keys():** Returns an iterator containing keys of array items
+
+**JavaScript Array values():** The `values()` method returns a new Array Iterator object that contains the values for each index in the array.
+
+```javascript
+let numarray=[ 1,8,7,8,6,4]
+console.log(numarray);
+//includes in array-----this checks that this method is include or not.
+
+
+if(numarray.includes(7)){
+
+    console.log('yes');
+
+}
+else{
+    console.log('no');
+}
+
+
+//keys in array
+
+let numarr1= numarray.keys();
+
+
+for (let key of numarr1){
+    console.log(key);
+}
+
+//values in array
+
+let languages = ["JavaScript", "Java", "C++"];
+
+
+let iteratorObject = languages.values();
+// looping through iterator
+for (let value of iteratorObject) {
+  console.log(value);
+}
+
+
+//map in array
+let numarray1=[ 1,64,9,16,25,4]
+
+console.log(numarray1.map(Math.sqrt));
+```
+
+### Output:
+
+```javascript
+//output of array
+[ 1, 8, 7, 8, 6, 4 ]
+
+//includes in array-----this checks that this method is include or not.
+yes
+
+//keys in array
+0
+1
+2
+3
+4
+5
+//values in array
+JavaScript
+ Java
+ C++
+
+//map in array
+[ 1, 8, 3, 4, 5, 2 ]
+```
+
+### for-of ,forEach(), every &some() Method:
+
+J**avascript Array for-of loop() :**This is a loop of Array , which makes the work easy.
+
+**Javascript Array forEach() :** Executes the given function on array elements
+
+**Javascript Array some():** Tests if any element passes given test function
+
+**Javascript Array every() :**The JavaScript Array every() method checks if all the array elements pass the given test function.
+
+```javascript
+//for of in array...
+
+let names= ['mahi' , 'tayyaba', 'falak', 'raki'];
+let uppercase= [];
+
+for (const value of names){
+    uppercase.push(value.toUpperCase());
+
+}
+    console.log(uppercase);
+
+//for each
+
+function square(num){
+    console.log(num * num) ;
+}
+let numarray1=[ 1,64,9,16,25,4]
+console.log(numarray1.forEach(square));
+
+//The some() method tests whether any of the array elements pass the given test function.
+
+function isodd(num1){
+    return num1 % 2==1;
+}
+
+console.log(numarray1.some(isodd));
+
+//every in array
+function checkAdult(age) {
+    return age >= 18;
+}
+
+const ageArray = [34, 23, 20, 26, 12];
+let check = ageArray.every(checkAdult); // false
+
+if (!check) {
+    console.log("All members must be at least 18 years of age.")
+}
+
+// using arrow function
+let check1 = ageArray.every(age => age >= 18); // false
+console.log(check1);
+```
+
+### Output:
+
+```javascript
+//for of in array...
+[ 'MAHI', 'TAYYABA', 'FALAK', 'RAKI' ]
+//for each
+1        
+4096     
+81       
+256      
+625      
+16       
+
+
+//The some() method tests whether any of the array elements pass the given test function.
+true   
+
+//every output
+All members must be at least 18 years of age.
+false
+```
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671701622340/gaZXAEZ2y.gif align="center")
+
+### **Array filter(),entries() &constructor Method:**
+
+**Javascript Array filter():**Returns array by filtering elements on given test
+
+**Javascript Array entries() :**Returns iterator containing key/value pair array
+
+**Javascript Array constructor :**Returns the constructor function for the array
+
+```javascript
+//filter method in array
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function to check even numbers
+function checkEven(number) {
+  if (number % 2 == 0)
+    return true;
+  else
+    return false;
+}
+
+// create a new array by filter even numbers from the numbers array
+let evenNumbers = numbers.filter(checkEven);
+console.log(evenNumbers);
+
+
+//entries method in array
+
+let newaarray= ["raki", "sani", "rashi"]; //array 
+let iterator= newaarray.entries(); //entries in array
+for (let entry of iterator){ //iterating for each item
+  console.log(entry);
+}
+
+//Constructor in array
+
+let array = [1, 2, 3, 4, 5];
+
+let constructor = array.constructor;
+
+console.log(constructor) 
+```
+
+### Output:
+
+```javascript
+//filter method output
+[ 2, 4, 6, 8, 10 ]
+
+//entry method output
+[ 0, 'raki' ]
+[ 1, 'sani' ]
+[ 2, 'rashi' ]
+
+//constructor method output
+[Function: Array]
+```
+
+### **copyWithin(),toLocaleString() Method:**
+
+**Javascript Array copyWithin() :** Copies and overwrites elements within the array
+
+**Javascript Array toLocaleString() :**The `toLocaleString()` method returns a string representing the elements of the array in a particular locale.
+
+**JavaScript Array flat():**Flattens the nested array to given depth
+
+```javascript
+//copyWithin Method in Array
+let newaarray= ["raki", "sani", "rashi", "mahir"]; //array 
+
+newaarray.copyWithin(1,3); //copy index 1 with the index 3
+ console.log(newaarray)
+
+ //tolocaleString
+
+ let arr=["naitik", 5];
+ let newa= arr.toLocaleString();
+ console.log(newa);
+
+ // 3 nested arrays 
+let numbers = [1, 2, [3, 4, [5, 6, [7, 8, [9,56]]]]];
+
+// reducing nesting by flattening the array to depth 2 
+let flattenArray = numbers.flat(2);
+
+// new flatten array
+console.log(flattenArray);
+
+```
+
+### Output:
+
+```javascript
+//output of copyWithin methid
+[ 'raki', 'mahir', 'rashi', 'mahir' ]
+//output of toLocaleString method
+naitik,5
+
+//output of flat method
+[ 1, 2, 3, 4, 5, 6, [ 7, 8, [ 9, 56 ] ] ]
+```
+
+### **Array flatMap(), reduceRight() & reduce() Method:**
+
+**JavaScript Array flatMap():**Returns new array by mapping and flattening array
+
+**Javascript Array reduceRight() :**Reduces array to single value from right to left
+
+**Javascript Array reduce():**Reduces array to single value from left to right
+
+```javascript
+//flatmap method
+
+// defining an array
+let numbers1 = [1, 2, 3, 4, 5];
+
+// each element of the array is squared and later flattened
+const resultingArray = numbers1.flatMap((x) => [x ** 2]);
+
+console.log(resultingArray);
+
+
+
+//reduce method
+
+let array1= ["Rakhshanda ", "is ", "a ", "student "];
+
+function reducer(accumulator, currentValue){
+   return accumulator+currentValue;
+}
+
+let result= array1.reduce(reducer);
+console.log(result);
+
+//Rightreduce method
+
+let array2= ["me ", "see ", "can ", "you "];
+
+function Rightreduce(accumulator, currentValue){
+
+  return accumulator+currentValue;
+
+}
+
+let opp= array2.reduceRight(Rightreduce);
+console.log(opp);
+```
+
+### Output:
+
+```javascript
+// output of flatmap method
+[ 1, 4, 9, 16, 25 ]
+// output of reduce method
+Rakhshanda is a student 
+// output of reduceRight method
+you can see me
+```
+
+### *<mark>Thankyou for reading this blog</mark>*
+
+### **Reference of this Blog Content:**
+
+*   [https://www.programiz.com/javascript/library/array](https://www.programiz.com/javascript/library/array)
+    
+*   [https://www.w3schools.com/js/js\_array\_methods.asp](https://www.w3schools.com/js/js_array_methods.asp)
+    
+*   [https://javascript.info/array-methods](https://javascript.info/array-methods)
+    
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671701737645/KIAV13i5k.gif align="center")
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671701953076/DoBUuEL4J.gif align="center")
