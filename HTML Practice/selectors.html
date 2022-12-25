@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+a {
+  color: blue;
+}
+
+/* Internal links, beginning with "#" */
+/* a[href^="#"] {
+  background-color: gold;
+} */
+
+/* Links with "example" anywhere in the URL */
+/* a[href*="example"] {
+  background-color: silver;
+} */
+
+/* Links with "insensitive" anywhere in the URL,
+   regardless of capitalization */
+/* a[href*="insensitive" i] {
+  color: cyan;
+} */
+
+/* Links with "cAsE" anywhere in the URL,
+with matching capitalization */
+/* a[href*="cAsE" s] {
+  color: pink;
+} */
+
+/* Links that end in ".org" */
+/* a[href$=".org"] {
+  color: red;
+} */
+
+/* Links that start with "https" and end in ".org" */
+/* a[href^="https"][href$=".org"] {
+  color: green;
+} */
+[title= "para"]{
+    color: rosybrown;
+
+}
+/* [class]{
+    color: blueviolet;
+} */
+
+            [class |="gfg"] {
+                color:rgb(45, 9, 205);
+                font-size:40px;
+                font-weight:bold;
+                text-align:center;
+            }
+            [class$="ide" s] {
+                font-size:17px;
+                text-align:center;
+                margin-top:0px;
+                color: cadetblue;
+            }
+            /* [class~="gfg"] {
+                color:green;
+                font-size:40px;
+                font-weight:bold;
+                text-align:center;
+            } */
+            /* [class~="geeks"] {
+                font-size:17px;
+                text-align:center;
+                margin-top:0px;
+            }
+            [class~="weeks"]{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: red;
+                text-align: center;
+                font-size: 17px;
+                margin-top: 0;
+            } */
+
+            /* div > p{
+              color: blue;
+              text-align: center;
+              font-family: 'Times New Roman', Times, serif;
+
+            }
+            div{
+              color: aquamarine;
+              text-align: center;
+            }
+            p{
+              color: rgb(29, 7, 52);
+              text-align: center;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            } */
+
+            div > p{
+            color: #009900;
+            font-size:32px;
+            font-weight:bold;
+            margin:0px;
+            text-align:center;
+        }
+        div {
+            text-align:center;
+        }
+        p {
+            text-align:center;
+        }
+        section >p{
+          color: brown;
+        }
+
+        .afterclass::after{
+          content: " I am exciting";
+          color: rgb(178, 55, 55);
+      
+          
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class = "gfg">GeeksforGeeks</div>
+        <div Class = "geeks">A computer science portal for geeks
+        </div>
+        <div class = "geeks ide">GeeksforGeeks is coding platform
+        </div>
+        <div class = "geeks rde">GeeksforGeeks is poding platform
+        </div>
+        <div class = "weeks ide">WeeksforGeeks is coding platform
+        </div>
+        <div class = "weeks rde">GeeksforGeeks is poding platform
+        </div>
+        <div Class = "geeks-ide">A computer science portal for rakshi
+        </div>
+        <div class = "geeks-ide1">GeeksforGeeks is coding platform for rakshi
+        </div>
+        
+    <h1  class="rak">This is a first heading of HTML</h1>
+    <h2 class="rak1">This is a second heading of HTML</h2>
+    
+    <h5 class="rak2" >This is a fifth heading of HTML</h5>
+    <h6 >This is a sixth heading of HTML</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, fugiat.</p>
+    <small>Lorem ipsum dolor sit amet.</small>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pariatur velit, quia minima esse atque quae sunt ea.</p>
+    <h3>This is a third heading of HTML</h3>
+    <h4  >This is a forth heading of HTML</h4>
+
+    <ul>
+        <p title="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, asperiores.</p>
+        <h2  value="">This is a second heading of HTML</h2>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+        <li><a href="https://example.org">Example https org link</a></li>
+      </ul>
+
+
+      <div>
+        <div>I am the  child div of parent div 
+          <p>I am a pargraph in child div</p>
+        </div>
+        <h1>prooo</h1>
+        <p>I am a paragrph in parent div</p>
+        <h2>prppp2</h2>
+        <p>I am a paragrph in parent div</p>
+        <p>I am a 2nd paragrph in parent div</p>
+
+      </div>
+      <p>I am a paragraph outside of the div</p>
+      <p>Hello people</p>
+
+
+      <div>Child selector property</div>
+     
+<p>GeeksforGeeks</p>
+ 
+    <div>
+        <div>child div content
+          <p>tree for tree</p>
+        </div>
+         
+<p>G4G</p>
+<p>me for me</p>
+ 
+    </div>
+     
+<p>Geeks</p>
+ 
+     
+<p>Hello</p>
+
+<section>
+  <p>This is Paragraph 1.</p>
+  <div>
+  <p>This is Paragraph 2.
+  </p>
+  </div>
+</section>
+
+<p class= "afterclass"> This is the after Example</p>
+
+
+ 
+
+        
+
+    
+</body>
+</html>

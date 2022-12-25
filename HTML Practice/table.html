@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        thead,
+
+tfoot{
+    background-color: rgb(188, 239, 239);
+    color: rgb(156, 119, 58);
+
+}
+table{
+    text-align: center;
+    border: 2px solid rgb(44, 3, 128);
+    border-color: rgb(60, 30, 231) ;
+   
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
+}
+th{
+    border: 1px solid rgb(4, 14, 14);
+    padding: 5px;
+    color: rgb(206, 178, 178);
+}
+td{
+    border: 1px solid rgb(12, 145, 145);
+    padding: 5px;
+    color: white;
+}
+tbody{
+    background-color: rgb(78, 159, 159);
+}
+caption{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <table >
+        <thead>
+
+            <tr>
+                <th >Objects</th>
+                <th scope="col">Expenditure</th>
+                <th scope="col">LeftOver</th>
+            </tr>
+            
+            
+        </thead>
+        <tbody>
+          
+            <tr>
+                <th scope="row">Chair</th>
+                <td>3000</td>
+                <td>1000</td> 
+                
+            </tr>
+            <tr>
+                <th scope="row">Table</th>
+                <td>5000</td>
+                <td>500</td> 
+                
+            </tr>
+            <tr>
+                <th scope="row">Television</th>
+                <td>6000</td>
+                <td>1200</td> 
+                
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <table>
+        <caption>Council budget (in £) 2018</caption>
+        <br>
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th scope="col">Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Donuts</th>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Stationery</th>
+                <td>18,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    
+    
+</body>
+</html>

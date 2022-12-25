@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Tag</title>
+
+    <style>
+      #girlframe{
+        border: 2px solid rgb(147, 45, 45);
+       }
+
+       kbd{
+        background-color: rgb(159, 157, 164);
+        padding: 2px;
+
+       }
+
+       .mydiv{
+        border: 2px solid rgb(96, 37, 37);
+        margin: auto;
+        padding: 2px;
+        width: 200px;
+        background-color: bisque;
+      }
+      div label{
+        color: blue;
+        display: flexbox;
+        justify-content: space-between;
+      
+      }
+      legend{
+        background-color: black;
+        color: white;
+        padding: 4px;
+      }
+      fieldset{
+        width: 200px
+      }
+      option{
+        border: 0.5px;
+      }
+
+      #listone{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      #listtwo{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+      }
+
+      .sum{
+
+        display: flex;
+        background-color: bisque;
+        width: 300px;
+    
+
+  }
+
+    </style>
+
+   
+    </head>
+<body>
+    <h2>This is a <abbr style="font-weight:100 ;" >Abbreviation tag</abbr> of heading text</h2>
+
+    <p>This is a <abbr style="font-style: Italic" font-weight="100">Abbreviation tag</abbr> of paragraph text</p>
+
+    <p>
+        <dfn id="html"><abbr title="HyperText Markup Language">HTML</abbr> </dfn> is a
+        markup language used to create the semantics and structure of a web page.
+      </p>
+      
+      <p>
+        A <dfn id="spec">Specification</dfn> (<abbr>spec</abbr>) is a document that
+        outlines in detail how a technology or API is intended to function and how it is accessed. 
+      </p>
+
+      <hr>
+      <iframe id="girlframe" width="400px" height="500px" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" frameborder=""></iframe>
+<hr>
+<p >Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+ <hr>
+
+ <div class="mydiv">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates ut eaque hic incidunt consectetur quos enim fuga sit natus.</p>
+
+  <div>
+    <label for="cheese">Cheese for meas peas seas </label>
+    <input type="checkbox" name="Cheese" id="">
+  </div>
+  <div>
+    <label for="Peas">Peas</label>
+    <input type="checkbox" name="Peas" id="">
+  </div>
+ 
+ </div>
+
+ <hr>
+ <hr>
+
+ <label for="name">Enter your name <br><input type="text"  id="name"></label>
+ <hr>
+
+ <form>
+
+  <fieldset>
+    <legend>Choose your favourite Subject</legend>
+    <input type="radio" name="eng" id="eng" value="e">
+    <label for="sub">English</label><br>
+    <input type="radio" name="math" id="math" value="m">
+    <label for="sub2">Maths</label><br>
+    <input type="radio" name="sci" id="sci" value="s">
+    <label for="sub3">Science</label>
+  </fieldset>
+
+
+
+ </form>
+
+ <!-- <label for="fuel">Fuel level:</label> -->
+
+<!-- <meter id="fuel"
+       min="0" max="100"
+       low="33" high="66" optimum="80"
+       value="50">
+    at 10/100
+</meter> -->
+
+<hr>
+
+<label for="list" id="listone">Choose your city</label>
+
+<select name="cities" id="listtwo">
+  <optgroup label="MP">
+    <option value="">Bhopal</option>
+    <option value="">Indore</option>
+    <option value="">Harda</option>
+  </optgroup>
+  <optgroup label="Hyderabad">
+    <option value="">katni</option>
+    <option value="">Jabalpur</option>
+    <option value="">damoh</option>
+  </optgroup>
+</select>
+
+<!-- <picture> 
+  <source srcset="C:\Users\lenovo\Pictures\Anis"
+          media="(min-width: 800px)">
+  <img src="C:\Users\lenovo\Pictures\Anis" alt="image">
+</picture> -->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptas illo minus, debitis nostrum blanditiis <q> <i>Lorem ipsum dolor sit amet. </i> </q> magni numquam id molestias qui omnis veniam eos! Ab aut suscipit inventore ad hic expedita, veritatis alias asperiores rerum? Accusantium sequi hic quasi, quisquam dignissimos nam corporis sed tempore ut.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur <s>Lorem ipsum dolor sit amet.</s> adipisicing elit. Hic aliquam doloremque repellat facere expedita accusantium!</p>
+
+<p>The formula of water is H<sub>2</sub>O</p>
+
+<div class="sum">
+<details >
+<summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+
+Keyboard
+</details>
+
+</div>
+<hr>
+<details>  She is very good girl , I like her
+
+  <summary>
+    Rakhshanda
+   
+  </summary>
+</details>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .Container{
+
+            width: 250px;
+            height: 300px;
+
+            background-color: azure;
+            display: flex;
+            gap: 20px 20px;
+            flex-flow: row wrap;
+           
+           
+
+        
+            
+        }
+        .Container div{
+           
+            width : 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #one{
+            background-color: blue;
+            
+           
+        }
+        #two{
+            background-color: rgb(250, 52, 240);
+        }
+        #three{
+            background-color: rgb(27, 194, 105);
+        }
+        #four{
+            background-color: rgb(235, 117, 13);
+        }
+        #one1{
+            background-color: blue;
+            
+           
+        }
+        #two2{
+            background-color: rgb(250, 52, 240);
+        }
+        /* #three3{
+            background-color: rgb(27, 194, 105);
+        }
+        #four4{
+            background-color: rgb(235, 117, 13);
+        } */
+
+    </style>
+</head>
+<body>
+
+    <div class="Container">
+        <div id="one">One</div>
+        <div id="two">Two</div>
+        <div id="three">Three</div>
+        <div id="four">Four</div>
+        <div id="one1">One1</div>
+        <div id="two2">Two2</div>
+        <!-- <div id="three3">Three3</div>
+        <div id="four4">Four4</div> -->
+
+    </div>
+    
+</body>
+</html>

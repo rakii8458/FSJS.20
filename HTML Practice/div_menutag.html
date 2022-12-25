@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .news {
+        
+            background-color: bisque;
+            padding: 1em;
+            border: solid thin black;
+            width: 300px;
+        }
+        
+        menu {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin-bottom: 0;
+            gap: 1em;
+        }
+        
+        .option {
+        
+        background-color: rgb(27, 191, 90);
+        padding: 1em;
+        border: solid thin rgb(226, 33, 33);
+        width: 300px;
+        border-radius: 5px;
+        border-width: 3px;
+        }
+        
+        #myoption {
+         
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin-bottom: 0;
+        gap: 1em;
+        
+        }
+        
+        #myoption #one {
+         
+         background-color: blueviolet;
+         }
+        
+         #myoption #two {
+         
+         background-color: rgb(150, 114, 185);
+         }
+        
+        
+        
+            </style>
+        
+</head>
+<body>
+
+    <div class="news">
+        <a href="#">NASA’s Webb Delivers Deepest Infrared Image of Universe Yet</a>
+        <menu >
+            <li><button id="save">Save for later</button></li>
+            <li><button id="share">Share this news</button></li>
+        </menu>
+      </div>
+      <hr>
+      <div class="option">
+        <a href="#">NASA’s Webb Delivers Deepest Infrared Image of Universe Yet</a>
+        <menu id="myoption">
+            <li><button id="one">Option1 <b>save</b> </button></li>
+            <li><button id="two">Option 2 delete</button></li>
+        </menu>
+      </div>
+
+    
+</body>
+</html>

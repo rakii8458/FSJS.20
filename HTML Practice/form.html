@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        div{
+           margin-block-start: 100px;
+           margin-left: 150px;
+            
+            background-color: rgb(236, 235, 237);
+            height: auto;
+            width: 500px;
+            display: flexbox;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 30px;
+            
+        }
+        #sub {
+            background-color: rgb(214, 192, 166);
+            border: none;
+        }
+        #res {
+            background-color: rgb(214, 192, 166);
+            border: none;
+        }
+        .form{
+            border: none;
+            
+        }
+        legend{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div >
+        <fieldset >
+        <legend id="formhead">Fill Form for the student verification</legend>
+    
+    <form  action="get">
+        <label for="fname">Enter your  first name
+            <input  class="form" type="text"></label> <br>
+        <label for="lname">Enter your last name
+            <input  class="form" type="text">
+        </label>
+        <br>
+        <label for="age">Age:
+            <input class="form" type="number" name="age" id="age">
+        </label>
+        <br>
+        <label for="dob">Enter your DOB:
+           <input class="form" type="date" name="dob" id="dob">
+        </label> <br>
+        <label for="city">Enter your City
+        <Select required  class="form">
+            <optgroup label="MP">
+                <option value="city">Bhopal</option>
+                <option value="city">Indore</option>
+                <option value="city">Jabalpur</option>
+                <option value="city">Harda</option>
+            </optgroup>
+            <optgroup label="Mahrashtra">
+                <option value="city">Mumbai</option>
+                <option value="city">Nagpur</option>
+                <option value="city">Amravati</option>
+                <option value="city">Pune</option>
+            </optgroup>
+        </Select>
+            <br>
+         <label for="gender">
+                Enter your Gender: 
+                <input required class="form" type="radio" name="gen" id="gen1">Male
+                <input  required class="form"type="radio" name="gen" id="gen2">Female
+        </label> <br>
+
+        <label for="email">Enter your Email address
+            <input  required class="form" type="email" name="email" id="email" placeholder="Email">
+
+        </label> 
+        <br>
+        <br>
+        <label for="add">Enter your Address
+            <textarea  class= "form" name="" id="" cols="30" rows="2"></textarea>
+
+        </label> <br>
+
+        <input id="sub" type="submit" value="Submit">
+        <input id="res" type="reset" value="Reset">
+        <br>
+        <label for="remember"> Remember me
+            <input class="form" type="checkbox" name="" id="">
+        </label>
+        
+
+    </fieldset>
+ </form>
+   </div>
+<!-- <figure>
+    <blockquote>
+        <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+    </blockquote>
+    <figcaption>First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).</figcaption>
+</figure>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste dicta debitis? Et labore nemo amet ducimus dolorem impedit praesentium consectetur, odit minima natus quibusdam? Iusto doloremque eveniet qui tempora.</p>
+    -->
+</body>
+</html>
