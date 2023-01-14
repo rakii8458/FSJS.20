@@ -1132,7 +1132,6 @@ footer{
 
 }
 
-
 /* --------------------------------------section2----------------------------- */
 
 .section2{
@@ -1154,7 +1153,8 @@ footer{
 /* ----------------------------------section3---------------------------------- */
 
 .section3{
-    height: 900px;
+    height: 1050px;
+    background-color: #ffffff;
 }
 .featuresdiv{
     padding: 1em 4em 1em 4em;
@@ -1168,8 +1168,10 @@ footer{
 }
 
 .feature{
-    min-width: 220px;
-    min-height: 320px;
+   max-width: 350px;
+    max-height: 370px;
+    display: flex;
+    
     
 
 
@@ -1180,14 +1182,14 @@ footer{
 
 .feature p{
    
-    font-size: 15px;
+    font-size: 18px;
    
 
     
 }
 .feature h1{
    
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
@@ -1230,7 +1232,7 @@ footer{
 
 .listtech{
     
-    margin-left: 400px;
+    margin-left: 600px;
     
     width: 600px;
    
@@ -1344,29 +1346,31 @@ footer{
 
 
 .reviewdiv1 h1{
-    font-size: 40px;
+    font-size: 55px;
     width: 45%;
     
 }
 .reviewdiv1 p{
     width: 42%;
     
-    font-size: 17px;
+    font-size: 20px;
     
 }
 
 
 
 .rating{
-    min-width: 35em;
+    min-width: 50em;
     min-height: 23em;
    
     border: 1px solid #6d6c6c;
     background-color: #ffffff;
-    padding: 2em 2em 2em 2em;
+    justify-content: space-around;
+    padding: 3em 2em 3em 2em;
     border-radius: 30px;
     display: flex;
    flex-direction: column;
+
    gap: 40px;
  
    
@@ -1414,17 +1418,17 @@ footer{
 
 .rating h2{
     font-family: var(--ffr);
-    font-size: 18px;
+    font-size: 25px;
     
 }
 .rating h2 span{
     font-family: var(--ffp);
-    font-size: 13px;
+    font-size: 20px;
     
 }
 .rating p{
     font-family: var(--ffr);
-    font-size: 20px;
+    font-size: 27px;
     
 }
 
@@ -1517,6 +1521,7 @@ form .formbtn{
 
 
 }
+
 
 
 
