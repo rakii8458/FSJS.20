@@ -383,7 +383,7 @@ html, body{
     flex-direction: column;
     align-items: center;
     background-color:#ffffff;
-    height: 800px;
+    height: 1300px;
     width: 100%;
     padding-top: 100px;
     border:none;
@@ -1168,8 +1168,8 @@ footer{
 }
 
 .feature{
-   max-width: 300px;
-    max-height: 330px;
+   max-width: 350px;
+    max-height: 370px;
     display: flex;
     
     
@@ -1182,14 +1182,14 @@ footer{
 
 .feature p{
    
-    font-size: 20px;
+    font-size: 18px;
    
 
     
 }
 .feature h1{
    
-    font-size: 28px;
+    font-size: 25px;
     
 }
 
@@ -1360,8 +1360,8 @@ footer{
 
 
 .rating{
-    min-width: 55em;
-    min-height: 20em;
+    min-width: 50;
+    min-height: 22em;
    
     border: 1px solid #6d6c6c;
     background-color: #ffffff;
