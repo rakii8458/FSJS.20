@@ -1168,8 +1168,8 @@ footer{
 }
 
 .feature{
-   max-width: 350px;
-    max-height: 370px;
+   max-width: 300px;
+    max-height: 330px;
     display: flex;
     
     
@@ -1182,14 +1182,14 @@ footer{
 
 .feature p{
    
-    font-size: 18px;
+    font-size: 20px;
    
 
     
 }
 .feature h1{
    
-    font-size: 25px;
+    font-size: 28px;
     
 }
 
@@ -1232,7 +1232,7 @@ footer{
 
 .listtech{
     
-    margin-left: 600px;
+    margin-left: 650px;
     
     width: 600px;
    
@@ -1346,7 +1346,7 @@ footer{
 
 
 .reviewdiv1 h1{
-    font-size: 55px;
+    font-size: 60px;
     width: 45%;
     
 }
@@ -1360,8 +1360,8 @@ footer{
 
 
 .rating{
-    min-width: 50em;
-    min-height: 23em;
+    min-width: 55em;
+    min-height: 20em;
    
     border: 1px solid #6d6c6c;
     background-color: #ffffff;
