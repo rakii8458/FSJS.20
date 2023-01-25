@@ -1412,6 +1412,7 @@ footer{
        
     }
     header .menu{
+        display:block;
         width: 30px;
         height: 30px;
         
@@ -2068,6 +2069,7 @@ footer{
     header .menu{
         width: 30px;
         height: 30px;
+        display:block;
         
        
     }
