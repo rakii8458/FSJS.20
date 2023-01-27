@@ -1210,7 +1210,7 @@ footer{
 
 .subscribe{
     background-color: #6663e9;
-    height: 400px;
+    height: 300px;
     width: 92%;
     border-radius: 50px;
     display: flex;
@@ -1221,7 +1221,7 @@ footer{
     
     
     
-    margin: 3em 3em 0em 3em;
+    margin: 0em 0em 0em 0em;
 }
 
 .subscribe h1{
@@ -1412,9 +1412,9 @@ footer{
        
     }
     header .menu{
-        display:block;
         width: 30px;
         height: 30px;
+        display:block;
         
        
     }
@@ -1692,6 +1692,7 @@ footer{
    
     gap: 20px;
     flex-direction: column;
+   background-color: #56b4b8;
     
     
 }
@@ -1715,7 +1716,7 @@ footer{
 
 .modern button{
     width: 100px;
-    height: 80px;
+    height: 30px;
     border: none;
     outline: none;
     background-color: #6663e9;
@@ -1853,6 +1854,7 @@ footer{
    position: relative;
    left: 0;
    right: 0px;
+   margin: 0;
     
     
     
@@ -1970,6 +1972,13 @@ footer{
     justify-content: center;
    
     
+}
+.firstlist ul li:nth-child(2) img{
+
+    width: 40px;
+    height: 40px;
+
+
 }
 
 .firstlist ul li:nth-child(1) img{
@@ -2069,7 +2078,7 @@ footer{
     header .menu{
         width: 30px;
         height: 30px;
-       display:block;
+        display: block;
         
        
     }
@@ -2370,7 +2379,7 @@ footer{
 
 .modern button{
     width: 100px;
-    height: 80px;
+    height: 30px;
     border: none;
     outline: none;
     background-color: #6663e9;
@@ -2626,6 +2635,13 @@ footer{
    
     
 }
+.firstlist ul li:nth-child(2) img{
+
+    width: 40px;
+    height: 40px;
+
+
+}
 
 .firstlist ul li:nth-child(1) img{
 
@@ -2679,161 +2695,3 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
