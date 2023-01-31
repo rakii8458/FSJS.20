@@ -613,3 +613,184 @@ footer .subscribe{
     flex-direction: row;
     gap: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------mediaquery for 1680px-------------------responsive */
+
+
+@media screen and (max-width:1680px) {
+     
+
+    main{
+        height: 700px;
+    }
+    .main{
+        position: relative;
+        animation: swing ease-in-out 1s infinite alternate;
+        transform-origin: center -20px;
+        /* float:left; */
+      
+        
+        bottom: 300px;
+        left: 200px;
+        height:800px;
+    }
+    
+    @keyframes swing {
+        0% { transform: rotate(3deg); }
+        100% { transform: rotate(-3deg); }
+    }
+
+    .onear{
+        position: relative;
+        
+        bottom: 650px;
+        left: 350px;
+        height: 90px;
+    }
+    
+    .maindiv{
+    
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        bottom: 630px;
+        left: 660px;
+        height: 90px;
+        width: 40%;
+    
+    }
+    
+    .maindiv h1{
+        font-size: 60px;
+        
+    }
+    .maindiv span{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .maindiv p{
+        font-size: 17px;
+        line-height: 2;
+        color: var(--font);
+    }
+    
+    .btndiv{
+        width: 250px;
+        height: max-content;
+    
+        
+        border: none;
+        outline: none;
+        background-color: var(--button);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 10px;
+        align-items: center;
+    
+    }
+    
+    .btndiv:hover{
+        box-shadow: rgba(198, 198, 210, 0.15) 0px 2px 5px 0px, rgba(188, 182, 182, 0.05) 0px 1px 1px 0px;
+    }
+    
+    .btndiv button{
+        border: none;
+        outline: none;
+        background-color: var(--button);
+        height: 60px;
+        font-size: 15px;
+    
+    }
+
+
+
+    /* ------------------------------music div----------------------------- */
+
+
+
+.musicdiv{
+    display: flex;
+    width: 96%;
+    height: 330px;
+    border-radius: 10px;
+    padding: 0em 8em 0em 8em;
+    margin-left: 50px;
+    align-items: center;
+    background-color: var(--grey);
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+
+
+.music{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.music>span{
+
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+
+.music div{
+    background-color: var(--black);
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 10px;
+}
+
+.music div:hover{
+    box-shadow: rgba(223, 221, 221, 0.1) -4px 9px 25px -6px;
+}
+
+.music button{
+    border: none;
+    outline: none;
+    background-color: var(--black);
+
+}
+
+
+footer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8em;
+}
+
+
+
+
+    
+}
+
+
