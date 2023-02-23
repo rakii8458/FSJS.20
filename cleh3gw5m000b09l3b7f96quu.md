@@ -1,0 +1,178 @@
+# Object Prototype and Prototype Chaining.
+
+Hello Everyone, Welcome to my new blog which is one of the most complex topics in javascript. **i.e. Object Prototype and Prototype Chaining.**
+
+when I started learning Javascript, my mentor taught me this topic but after watching his video for 2-3times it was becoming Complex for me. but I thought if it was becoming that hard for me, It must be the same for the others too.
+
+Then I researched about it and thought to share this valuable and easy knowledge with all of you.
+
+***Without wasting any time in my story, Let's learn about it.***
+
+## What is Object Prototype?
+
+A <mark>prototype</mark> in JavaScript is an object from which another object is derived.
+
+Prototypes are the mechanism by which JavaScript objects inherit features from one another. In this article, we explain what a prototype is, how prototype chains work, and how a prototype for an object can be set.
+
+In JavaScript, a prototype can be used to add properties and methods to a constructor function. And objects inherit properties and methods from a prototype.
+
+In class-based languages, we have a class which contains all the properties and methods defined inside the class.
+
+When the object of the class is created the newly created object has the access to the properties and the public methods defined inside the class.
+
+The prototype is very similar to the class which acts as the blueprint of the JavaScript objects.
+
+The newly created JavaScript object has access to all the properties and methods of the prototype from which the object is created in addition to its properties and methods.
+
+Also due to the dynamic nature of JavaScript, we can not only add properties to an object dynamically but can also add properties to the prototype object which would mean adding a property or behaviour to the base class at runtime so that all the newly created objects have access to the properties added dynamically to the prototype object.
+
+Everything learned from the example is the best way of understanding the whole theory, so Let's learn from it.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1677000572150/c52c7c5a-c4de-4b0d-8583-e05cc057765b.png align="center")
+
+As we are seeing in the above image while writing an `Object.` there are lots of options that came to insert on it. These are the properties of the Object.
+
+```javascript
+// creating an object constructor
+function Employee(name,age){
+    this.name = name;
+    this.age = age;
+}
+//creating an object of type student
+let employee1 = new Employee('Saqib',32)
+let employee2 = new Employee('Radhe',42)
+
+console.log(employee1);
+console.log(employee2);
+
+//adding property to student1 instance dynamically
+employee1.salary = 30000;
+
+//adding property to the prototype of the Student,
+//this would add the gender property to all the 
+//existing object instance of the Student object 
+//and would initialize it to null
+Employee.prototype.gender = null
+
+// although student3 is created with name and age
+// initialized but the gender property would also 
+//be attached to it and assigned as null because 
+//of the above mentioned line of code.
+let employee3 = new Employee('Rani',26)
+employee3.gender= 'female';
+console.log(employee3);
+```
+
+In this example, we set the property of object Employee, i.e.gender, so the other `employee1, employee2 and employee3` imherit the property from the prototype property of `Employee` constructor function.
+
+***One Another Example of Object Prototype is:***
+
+```javascript
+let myname= [ 'rak', 'rakshu']
+
+const obj1= {
+    fiance: 'anis',
+    age : 25,
+
+    myfunction:function(){
+        console.log('my hubby name is', this.fiance);
+    }
+}
+//expected output: my hubby name is anis
+```
+
+In this example, we learned how we can also add new methods to a constructor function using the prototype.
+
+## What is Prototype Chaining?
+
+Every object in JavaScript has a built-in property, which is called its **prototype**. The prototype is itself an object, so the prototype will have its prototype, making what's called a **prototype chain**. The chain ends when we reach a prototype that has `null` for its prototype.
+
+Prototypes are the means of inheritance in JavaScript. The prototype of an object would also have a prototype object. This continues until we reach the top level when there is no prototype object.
+
+This is called ***prototype chaining*** or ***prototype chain in JavaScript***.
+
+```javascript
+let myname= [ 'rak', 'rakshu']
+const obj1= {
+    fiance: 'anis',
+    age : 25,
+
+    myfunction:function(){
+        console.log('my hubby name is', this.fiance);
+    }
+}
+//expected output: my hubby name is anis
+Object.prototype.rakshanda= function(){
+    console.log('I am rakhshanda');
+}
+
+myname.rakshanda();
+Object.prototype.rakshanda= obj1;
+//expected output : I am rakhshanda
+```
+
+***Let's learn from the Output Example:***
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1677054232053/d98c4058-d26d-419f-873a-cbd69cdd6079.png align="center")
+
+This example shows the best example of prototype chaining.
+
+1. At first, it shows the Object and the value inside it i.e. `obj1.`
+    
+2. In this Object, there is a function and Object prototype.
+    
+3. When we open the Object Prototype it opens the list of properties, in which we can see the `rakshanda` in which we inherit the properties of `obj1.`
+    
+4. After Opening the `rakshanda` shows the `obj1` properties and the function and again Object Prototype.
+    
+5. and like this prototype chain goes on until it finds no prototype.
+    
+
+## Inheritance in Javascript:
+
+Prototypes are a powerful and very flexible feature of JavaScript, making it possible to reuse code and combine objects.
+
+In particular they support a version of **inheritance**. Inheritance is a feature of object-oriented programming languages that lets programmers express the idea that some objects in a system are more specialized versions of other objects.
+
+There are three methods in which we can inherit the properties.
+
+1. ***Object.getPrototypeOf(object\_name)***
+    
+2. ***object\_name.\_\_proto\_\_ //it is deprecated in a few browsers***
+    
+3. ***Object. prototype***
+    
+
+***Let's learn from the example:***
+
+```javascript
+let names= {
+    name1: 'raksha',
+    name2: 'anis'
+}
+let ageofall= {
+    age1: 24,
+    age2: 25
+    
+}
+let pata= {
+    pata1: 'bhopal',
+    pata2: 'Nemawar'
+}
+
+Object.setPrototypeOf(names, ageofall);
+console.log(names.age1);
+//expected output: 24
+```
+
+In this way, you can inherit the properties of a different object into your object.
+
+In this article, you learned about what are prototypes, prototype chaining and Inheritance.
+
+I am giving you a link, to where I studied this, If you want depth knowledge of it, Kindly go through these links.
+
+### Reference Links:
+
+1. [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object\_prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+    
+2. [https://www.sudshekhar.com/blog/prototype-and-prototype-chain-in-javascript](https://www.sudshekhar.com/blog/prototype-and-prototype-chain-in-javascript)
