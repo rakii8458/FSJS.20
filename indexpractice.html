@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <p id="raki"></p>
+    <p id="rakii">Rakiii</p>
+<form action="post" onsubmit="return validate()" name="myform" >
+    <input type="text" name="fname"  >
+    <input type="submit" value="Submit" >.
+    
+</form>
+
+<!-- <button onclick= "return btnvalidate()">Click Me</button> -->
+
+<button onclick="document.getElementById('rakii').style.fontFamily='sans-serif'">Click</button>
+
+
+
+<p id="p1">
+    This is a text.
+    This is a text.
+    This is a text.
+    This is a text.
+    </p>
+    
+    <input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
+    <input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+    
+
+    <script>
+        document.getElementById("raki").innerHTML= "Anis Ali";
+        let para= document.querySelector("#raki");
+        para.style.fontSize= "80px";
+        para.style.color= "red";
+        para.style.fontFamily= 'sans-serif';
+
+        let button= document.querySelector("button");
+        button.style.width= "80px";
+        button.style.backgroundColor= 'blue';
+        button.style.height= "30px";
+       
+        console.log(p);
+
+        function validate(){
+            let x=document.forms["myform"]["fname"].value;
+            
+            if(x == ""){
+                alert("Field is empty");
+                return false;
+                // let fname= document.querySelector("#name");
+                
+                // x.style.backgroundColor= "red";
+                
+
+
+            }else{
+                alert("Form Submitted Succesfully");
+                return true;
+                
+            }
+
+        }
+
+
+        // function btnvalidate(){
+        //     let para1= document.querySelector("#rakii");
+        //     para1.style.fontSize= '50px';
+        //     para1.style.fontFamily= "sans-serif"
+            
+        // }
+
+
+
+    </script>
+</body>
+</html>
