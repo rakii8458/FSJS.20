@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F9F5ED;
+}
+
+html , body{
+    
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
+
+.container{
+    margin: 30px 140px;
+}
+.navbar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.list{
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.628);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    
+}
+
+
+
+.written-section{
+    margin-top: 180px;
+    
+}
+ .heading{
+    width: 250px;
+    font-size: 40px;
+
+
+}
+.desc{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.37);
+    
+}
+
+.body-button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(52, 143, 52);
+}
+
+.imageclass{
+   position: relative;
+   bottom: 340px;
+   left: 600px;
+}
