@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    margin: 30px 60px;
+}
+
+.navbar{
+    height: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list{
+    font-weight: 600;
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 40px;
+}
+li:first-child{
+    color: green;
+}
+
+.written-section{
+    margin-top: 50px;
+}
+.heading{
+    width: 550px;
+    font-size: 70px;
+}
+.paragraph{
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    width: 510px;
+    color: rgba(0, 0, 0, 0.331);
+
+}
+.button{
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: green;
+    border: none;
+    color: white;
+    width: 290px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bottom-angle{
+    position: relative;
+    bottom: 30px;
+    left: 190px;
+}
+
+.doctor-green{
+    position: relative;
+    left: 700px;
+    bottom: 460px;
+}
+.doctor-yellow{
+    position: relative;
+    left: 350px;
+    bottom: 480px;
+}
+.doctor{
+    position: relative;
+    right: 20px;
+    
+    bottom: 460px;
+
+}
+.mouse{
+    position: relative;
+    right: 580px;
+    
+    bottom: 460px;
+
+}
+.stethoscope{
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    top: 70px;
+    right: 550px;
+   
+   
+}
+    
+
