@@ -1,0 +1,126 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+ div section{
+    
+    margin: 40px 75px;
+
+ }
+ .container{
+    max-width: 100%;
+    position: fixed;
+    
+
+
+ }
+   .navbar-container{
+    height: 50px;
+    
+    
+    /* background-color: rgb(235, 228, 219); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+
+    } 
+    
+    .nav-button{
+
+        margin-right: 0px;
+        height: 40px;
+        width: 100px;
+        background-color: #6464ba;
+        border: none;
+        color: white;
+        font-family: 'Poppins';
+        pad: 10px;
+        font-size: 10px;
+        border-radius: 5px;
+        
+    }
+     .list{
+        
+        font-family: 'Poppins';
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin-right: 310px;
+        font-size: 13px;
+        font-weight: 500;
+        color: rgb(109, 91, 91);
+     }
+
+    
+    .list-item1{
+        
+        font-weight: 600;
+        color: black;
+    }
+
+    .banner-container{
+        
+        width: 35%;
+    }
+
+    .banner-container .heading-text{
+
+        
+        font-size: 45px;
+        width: 290px;
+        color: #2e325ff4;
+        margin-top: 80px;
+        
+        
+    } 
+
+    span{
+        
+        color: #6464ba;
+    }
+
+    .banner-container .description{
+        font-size:11px ;
+       
+        color: rgba(0, 0, 0, 0.331);
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        width: 290px;
+        word-spacing: 1px
+ }
+
+    .nav-button-btn{
+        height: 50px;
+        width: 200px;
+        margin-top: 40px;
+        background-color: #6464ba;
+        border: none;
+        color: white;
+        font-family: 'Poppins';
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 10px;
+        
+    }
+
+    div .image{
+       
+        margin-left: 295px;
+        margin-top: -350px;
+        
+ }
+
+    
+     
